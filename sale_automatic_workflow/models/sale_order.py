@@ -21,6 +21,16 @@ class SaleOrder(models.Model):
         store=True,
     )
 
+    @api.model
+    def default_get(self, fields):
+        res = super(SaleOrder, self).default_get(fields)
+        default_workflow = self.env["sale.workflow.process"].search(
+            [("default", "=", True)], limit=1
+        )
+        if default_workflow:
+            res["workflow_process_id"] = default_workflow.id
+        return res
+
     @api.depends("order_line.qty_delivered", "order_line.product_uom_qty")
     def _compute_all_qty_delivered(self):
         precision = self.env["decimal.precision"].precision_get(
@@ -84,3 +94,10 @@ class SaleOrder(models.Model):
                 res |= super(SaleOrder, self - sales_keep_order_date).write(vals)
                 return res
         return super(SaleOrder, self).write(vals)
+
+    @api.onchange("partner_id")
+    def onchange_partner_id(self):
+        res = super(SaleOrder, self).onchange_partner_id()
+        if not self.workflow_process_id and self.partner_id.workflow_process_id:
+            self.workflow_process_id = self.partner_id.workflow_process_id.id
+        return res
