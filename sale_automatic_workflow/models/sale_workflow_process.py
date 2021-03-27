@@ -28,6 +28,7 @@ class SaleWorkflowProcess(models.Model):
         return self.env["ir.filters"].browse()
 
     name = fields.Char()
+    default = fields.Boolean()
     picking_policy = fields.Selection(
         selection=[
             ("direct", "Deliver each product when available"),
@@ -115,3 +116,5 @@ class SaleWorkflowProcess(models.Model):
             "sale_automatic_workflow.automatic_workflow_sale_done_filter"
         ),
     )
+    auto_commit = fields.Boolean()
+    search_limit = fields.Integer(default=20)
