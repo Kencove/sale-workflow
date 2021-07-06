@@ -20,7 +20,7 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [sale_advance_payment](sale_advance_payment/) | 14.0.1.0.0 | Allow to add advance payments on sales and then use them on invoices
-[sale_automatic_workflow](sale_automatic_workflow/) | 14.0.1.1.1 | Sale Automatic Workflow
+[sale_automatic_workflow](sale_automatic_workflow/) | 14.0.1.1.2 | Sale Automatic Workflow
 [sale_commercial_partner](sale_commercial_partner/) | 14.0.1.0.1 | Add stored related field 'Commercial Entity' on sale orders
 [sale_commitment_date_mandatory](sale_commitment_date_mandatory/) | 14.0.1.0.0 | Set commitment data mandatory and don't allowto add lines unless this field is filled
 [sale_discount_display_amount](sale_discount_display_amount/) | 14.0.1.0.1 | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
@@ -35,6 +35,7 @@ addon | version | summary
 [sale_order_line_description](sale_order_line_description/) | 14.0.1.0.0 | Sale order line description
 [sale_order_line_menu](sale_order_line_menu/) | 14.0.1.0.0 | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 14.0.1.0.0 | Note on sale order line
+[sale_order_line_price_history](sale_order_line_price_history/) | 14.0.1.0.0 | Sale order line price history
 [sale_order_lot_generator](sale_order_lot_generator/) | 14.0.1.0.1 | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 14.0.1.0.0 | Sale Order Lot Selection
 [sale_order_note_template](sale_order_note_template/) | 14.0.1.0.0 | Add sale orders terms and conditions template that can be used to quickly fullfill sale order terms and conditions
@@ -42,9 +43,10 @@ addon | version | summary
 [sale_order_revision](sale_order_revision/) | 14.0.1.0.0 | Keep track of revised quotations
 [sale_partner_incoterm](sale_partner_incoterm/) | 14.0.1.0.0 | Set the customer preferred incoterm on each sales order
 [sale_pricelist_from_commitment_date](sale_pricelist_from_commitment_date/) | 14.0.1.0.1 | Use sale order commitment date to compute line price from pricelist
+[sale_product_brand_exception](sale_product_brand_exception/) | 14.0.1.0.0 | Define rules for sale order and brands
 [sale_product_category_menu](sale_product_category_menu/) | 14.0.1.0.1 | Shows 'Product Categories' menu item in Sales
 [sale_product_multi_add](sale_product_multi_add/) | 14.0.1.0.1 | Sale Product Multi Add
-[sale_product_seasonality](sale_product_seasonality/) | 14.0.1.0.1 | Integrates rules for products' seasonal availability with sales
+[sale_product_seasonality](sale_product_seasonality/) | 14.0.1.1.0 | Integrates rules for products' seasonal availability with sales
 [sale_product_set](sale_product_set/) | 14.0.1.2.0 | Sale product set
 [sale_product_set_packaging_qty](sale_product_set_packaging_qty/) | 14.0.1.0.0 | Manage packaging and quantities on product set lines
 [sale_quotation_number](sale_quotation_number/) | 14.0.1.0.2 | Different sequence for sale quotations
@@ -53,6 +55,9 @@ addon | version | summary
 [sale_tier_validation](sale_tier_validation/) | 14.0.1.0.0 | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_validity](sale_validity/) | 14.0.1.0.2 | Set a default validity delay on quotations
 [sale_wishlist](sale_wishlist/) | 14.0.1.0.1 | Handle sale wishlist for partners
+[sales_team_security](sales_team_security/) | 14.0.1.0.0 | New group for seeing only sales channel's documents
+[sales_team_security_crm](sales_team_security_crm/) | 14.0.1.0.0 | Integrates sales_team_security with crm
+[sales_team_security_sale](sales_team_security_sale/) | 14.0.1.0.0 | Integrates sales_team_security with sale
 
 [//]: # (end addons)
 
